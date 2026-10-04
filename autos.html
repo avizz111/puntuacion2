@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/f1.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Puntuacion 2</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Formula 1</h1>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Auto</legend>
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo" placeholder="Ingrese el modelo del auto" required>
+                    <label for="color">Color:</label>
+                    <input type="color" id="color" name="color">
+                    <label for="foto">Foto:</label>
+                    <input type="file" id="foto" name="foto">
+                    <label>Estado Activo:</label>
+                    <div class="radio-input">
+                        <input type="radio" id="si" name="estadoActivo" value="si" required/>
+                        <label for="si">Si</label>
+                        <input type="radio" id="no" name="estadoActivo" value="no" required />
+                        <label for="no">No</label>
+                    </div>
+                    <button type="button" onclick="mostrarRespuestasAutos()">Guardar</button>
+                </fieldset>
+            </form>
+        </section>
+        <aside>
+            <nav>
+                <ul id="menu-normal">
+                    <li><a href="index.html">Menu</a></li>
+                    <li><a href="#" id="activo">Autos</a></li>
+                    <li><a href="escuderia.html">Escuderia</a></li>
+                    <li><a href="corredor.html">Corredor</a></li>
+                    <li><a href="relaciones.html">Relaciones</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <footer>
+        <section id="contenedor-footer">
+            <section>
+                <p>Ismael Abraham Avila Lona</p>
+            </section>
+        </section>
+        <section>
+            <p>LDSM405</p>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

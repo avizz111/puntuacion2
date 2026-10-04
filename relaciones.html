@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/f1.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Puntuacion 2</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Formula 1</h1>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset id="form-relaciones">
+                    <legend>Relaciones</legend>
+                    <fieldset>
+                        <legend>Piloto - Escuderia</legend>
+                        <label for="pilotos-f1">Selecciona un piloto:</label>
+                        <select id="pilotos-f1" name="piloto">
+                            <option value="verstappen">Max Verstappen</option>
+                            <option value="leclerc">Charles Leclerc</option>
+                            <option value="norris">Lando Norris</option>
+                            <option value="colapinto">Franco Colapinto</option>
+                            <option value="russell">George Russell</option>
+                        </select>
+                        <label for="escuderia-f1">Selecciona una escuderia:</label>
+                        <select id="escuderia-f1" name="escuderia">
+                            <option value="red-bull">Red Bull</option>
+                            <option value="ferrari">Ferrari</option>
+                            <option value="mclaren">McLaren</option>
+                            <option value="alphine">Alpine</option>
+                            <option value="mercedes">Mercedes</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Piloto - Compañero</legend>
+                        <label for="pilotos-principales-f1">Selecciona un piloto:</label>
+                        <select id="pilotos-principales-f1" name="piloto">
+                            <option value="verstappen">Max Verstappen</option>
+                            <option value="leclerc">Charles Leclerc</option>
+                            <option value="norris">Lando Norris</option>
+                            <option value="colapinto">Franco Colapinto</option>
+                            <option value="russell">George Russell</option>
+                        </select>
+                        <label for="pilotos-companero-f1">Selecciona otro piloto:</label>
+                        <select id="pilotos-companero-f1" name="piloto">
+                            <option value="hadjar">Isack Hadjar</option>
+                            <option value="hamilton">Lewis Hamilton</option>
+                            <option value="piastri">Oscar Piastri</option>
+                            <option value="gasly">Pierre Gasly</option>
+                            <option value="antonelli">Kimi Antonelli</option>
+                        </select>
+                    </fieldset>
+                    <button type="button" onclick="mostrarRespuestasRelaciones()">Guardar</button>
+                </fieldset>
+            </form>
+        </section>
+        <aside>
+            <nav>
+                <ul id="menu-normal">
+                    <li><a href="index.html">Menu</a></li>
+                    <li><a href="autos.html">Autos</a></li>
+                    <li><a href="escuderia.html">Escuderia</a></li>
+                    <li><a href="corredor.html">Corredor</a></li>
+                    <li><a href="#" id="activo">Relaciones</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <footer>
+        <section id="contenedor-footer">
+            <section>
+                <p>Ismael Abraham Avila Lona</p>
+            </section>
+        </section>
+        <section>
+            <p>LDSM405</p>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

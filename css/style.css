@@ -1,0 +1,237 @@
+*{
+    color: #dadada;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Fuente y color se heredan del ancestro si no se redefinen; * los asigna aquí a cada elemento. */
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    /* transition suaviza los cambios de estilo, por ejemplo al pasar el cursor sobre un botón. */
+    transition: all 0.2s ease-in-out;
+}
+
+h1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding: 20px;
+}
+
+#activo{
+    font-weight: 900;
+}
+
+body{
+    background: url(../img/mclaren-mcl38-3200x1800-22698.jpg);
+    background-size: cover;
+}
+
+main, footer{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+main section, footer section:nth-child(1){
+    width: 80vw;
+}
+
+aside{
+    width: 20vw;
+}
+
+main{
+    height: 80vh;
+}
+
+footer{
+    height: 20vh;
+    align-items: center;
+}
+
+#contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    section{
+        margin: 0 20px;
+    }
+}
+
+li{
+    list-style: none;
+}
+
+#menu-normal{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #dadada;
+}
+
+/* backdrop-filter difumina el contenido que queda detrás de cada fieldset. */
+fieldset{
+    backdrop-filter: blur(5px);
+    margin: 0;
+}
+
+form fieldset {
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+input{
+    padding: 2px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 200px;
+}
+
+button{
+    width: 100px;
+    margin-left: auto;
+    background-color: #0000;
+    padding: 5px;
+    border-radius: 5px;
+    color: #dadada;
+    border: 1px solid #dadada;
+}
+
+button:hover{
+    background-color: #dadada;
+    color: #000;
+}
+
+legend{
+    font-weight: 700;
+    font-size: 20px;
+    margin: auto;
+    padding: 0;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0 5px 0 0;
+}
+
+
+/* input[type="text"] selecciona los campos de texto */
+input[type="text"] {
+    background: #0000;
+    color: #dadada;
+    border: none;
+    border-bottom: 1px solid #dadada80;
+    border-radius: 0;
+}
+
+/* :focus identifica el control activo; outline: none elimina su contorno predeterminado. */
+input[type="text"]:focus {
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #dadada;
+    border-radius: 0;
+    outline: none;
+}
+
+/* :checked selecciona el radio elegido; accent-color define el color de su indicador. */
+input[type="radio"]:checked {
+    accent-color: #dadada;
+}
+
+.radio-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.radio-input label {
+    margin-right: 20px;
+}
+
+textarea {
+    background: #0000;
+    color: #dadada;
+    border: none;
+    border-bottom: 1px solid #dadada80;
+    border-radius: 0;
+    margin-bottom: 20px;
+    max-width: 70vw;
+    max-height: 15vw;
+    min-height: auto;
+    min-width: auto;
+    font-size: 14px;
+}
+
+textarea:focus {
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #dadada;
+    border-radius: 0;
+    outline: none;
+}
+
+#form-corredor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .row3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+    .row2 {
+        display: flex;
+        align-items: center;
+        gap: 40%;
+        *{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+#izquierda{
+    margin-right: auto;
+}
+
+select{
+    background: #0000;
+    color: #dadada;
+    border: none;
+    border-bottom: 1px solid #dadada80;
+    border-radius: 0;
+    max-width: 70vw;
+    max-height: 15vw;
+    min-height: auto;
+    min-width: auto;
+    font-size: 14px;
+}
+
+select option{
+    background: #0000;
+    color: #000;
+    border: none;
+    border-bottom: 1px solid #dadada80;
+    border-radius: 0;
+    max-width: 70vw;
+    max-height: 15vw;
+    min-height: auto;
+    min-width: auto;
+    font-size: 14px;
+}
