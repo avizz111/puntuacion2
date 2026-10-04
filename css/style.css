@@ -152,6 +152,24 @@ input[type="radio"]:checked {
     accent-color: #dadada;
 }
 
+input[type="number"]{
+    background: #0000;
+    color: #dadada;
+    border: none;
+    border-bottom: 1px solid #dadada80;
+    border-radius: 0;
+    
+}
+
+input[type="number"]:focus {
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #dadada;
+    border-radius: 0;
+    outline: none;
+}
+
+
 .radio-input {
     display: flex;
     flex-direction: row;
